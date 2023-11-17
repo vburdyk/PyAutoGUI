@@ -86,7 +86,6 @@ if __name__ == "__main__":
     auto_browser = AutoBrowserSearch(count_visit, url)
     auto_browser.open_chrome()
     auto_browser.search_random_word()
-    for word in auto_browser.key_words:
-        for visit in range(auto_browser.count_visit):
-            auto_browser.search_unique_url()
-            auto_browser.scroll_page()
+    for visit in range(auto_browser.count_visit):
+        auto_browser.search_unique_url()
+        auto_browser.scroll_page()
